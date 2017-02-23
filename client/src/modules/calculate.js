@@ -28,7 +28,7 @@ var CalculateButton = React.createClass({
     var secondNum = document.getElementById('secondNum').value
     var sum = Number(firstNum) + Number(secondNum)
     if (sum !== undefined) {
-      const path = 'http://localhost:3000/result'
+      const path = '/result'
       browserHistory.push(path)
     }
     window.sessionStorage.setItem('sum', sum)
